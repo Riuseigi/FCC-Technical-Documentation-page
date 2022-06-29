@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<!-- Bootstrap Links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Document Page</title>
+</head>
+<body>
+    <div class="wrapper"></div>
+    <!-- Nav Bar -->
+        <nav id="navbar">
+            <header>Java Documentation</header>
+            <!-- Nav links -->
+            <ul class="list-unstyled components">
+                <li class="active"><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li class="active"><a class="nav-link" href="#Why_to_Learn_java_Programming?">Why to Learn java Programming?</a></li>
+                <li class="active"><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                <li class="active"><a class="nav-link" href="#Applications_of_Java_Programming">Applications of Java Programming</a></li>
+                <li class="active"><a class="nav-link" href="#Classes_in_Java">Classes in Java</a></li>
+                <li class="active"><a class="nav-link" href="#Constructors">Constructors</a></li>
+                <li class="active"><a class="nav-link" href="#Creating_an_Object">Creating an Object</a></li>
+                <li class="active"><a class="nav-link" href="#Tools_You_Will_Need">Tools You Will Need</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <!-- Main  -->
+    <div>
+        <main id="main-doc">
+            <!-- Introduction -->
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding of Java. This reference will take you through simple and practical approaches while learning Java Programming language.</p>
+               
+            </section>
+            <!-- Why Learn Java Programming -->
+            <section class="main-section" id="Why_to_Learn_java_Programming?">
+                <header>Why to Learn Java Programming?</header>
+                <p>Java is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Software Development Domain. I will list down some of the key advantages of learning Java Programming:</p>
+                <ul class="list">
+                    <li><p><b>Object Oriented</b>− In Java, everything is an Object. Java can be easily extended since it is based on the Object model.</p></li>
+                    <li><p><b>Platform Independent </b>− Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by the Virtual Machine (JVM) on whichever platform it is being run on.</p></li>
+                    <li><p><b>Simple </b>- Java is designed to be easy to learn. If you understand the basic concept of OOP Java, it would be easy to master.</p></li>
+                    <li><p><b>Architecture-neutral </b>− Java compiler generates an architecture-neutral object file format, which makes the compiled code executable on many processors, with the presence of Java runtime system.</p></li>
+                    <li><p><b>Portable </b>Being architecture-neutral and having no implementation dependent aspects of the specification makes Java portable. Compiler in Java is written in ANSI C with a clean portability boundary, which is a POSIX subset.</p></li>
+                    <li><p><b>Robust </b>− Java makes an effort to eliminate error prone situations by emphasizing mainly on compile time error checking and runtime checking.</p></li>
+                    <li><p><b>Secure </b>− With Java's secure feature it enables to develop virus-free, tamper-free systems. Authentication techniques are based on public-key encryption.</p></li>
+                </ul>
+            </section>
+            <!-- Sample Program -->
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <p>Just to give you a little excitement about Java programming, I'm going to give you a small conventional C Programming Hello World program, You can try it using Demo link.</p>
+                <code>
+                    public class MyFirstJavaProgram {
+
+                        /* This is my first java program.
+                         * This will print 'Hello World' as the output
+                         */
+                     
+                        public static void main(String []args) {
+                           System.out.println("Hello World"); // prints Hello World
+                        }
+                     }
+                </code>
+            </section>
+            <!-- Application -->
+            <section class="main-section" id="Applications_of_Java_Programming">
+                <header>Applications of Java Programming</header>
+                <p>The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suit various types of platforms. For example: J2EE for Enterprise Applications, J2ME for Mobile Applications.</p>
+                <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is guaranteed to be <b>Write Once, Run Anywhere</b>.</p>
+                <ul>
+                    <li><p><b>Multithreaded </b>− With Java's multithreaded feature it is possible to write programs that can perform many tasks simultaneously. This design feature allows the developers to construct interactive applications that can run smoothly.</p></li>
+                    <li><p><b>Interpreted </b>− Java byte code is translated on the fly to native machine instructions and is not stored anywhere. The development process is more rapid and analytical since the linking is an incremental and light-weight process.</p></li>
+                    <li><p><b>High Performance </b>− With the use of Just-In-Time compilers, Java enables high performance.</p></li>
+                    <li><p><b>Distributed </b>− Java is designed for the distributed environment of the internet.</p></li>
+                    <li><p><b>Dynamic </b>− Java is considered to be more dynamic than C or C++ since it is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time.</p></li>
+                </ul>
+            </section>
+            <section class="main-section" id="Classes_in_Java">
+                <header>Classes in Java</header>
+                <p>A class is a blueprint from which individual objects are created.</p>
+                <p>Following is a sample of a class.</p>
+                <h3>Example</h3>
+                <code>public class Dog {
+                    String breed;
+                    int age;
+                    String color;
+                 
+                    void barking() {
+                    }
+                 
+                    void hungry() {
+                    }
+                 
+                    void sleeping() {
+                    }
+                 }</code>
+                 <p>A class can contain any of the following variable types.</p>
+                 <ul class="list">
+                    <li><p><b>Local variables </b>− Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.</p></li>
+                    <li><p><b>Instance variables </b> Instance variables are variables within a class but outside any method. These variables are initialized when the class is instantiated. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.</p></li>
+                    <li><p><b>Class variables </b>− Class variables are variables declared within a class, outside any method, with the static keyword.</p></li>
+                 </ul>
+            </section>
+            <section class="main-section" id="Constructors">
+                <header>Constructors</header>
+                <p>When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.</p>
+                <p>Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.</p>
+                <p>Following is an example of a constructor −</p>
+                <code>public class Puppy {
+                    public Puppy() {
+                    }
+                 
+                    public Puppy(String name) {
+                       // This constructor has one parameter, name.
+                    }
+                 }</code>
+                 <p>Java also supports Singleton Classes where you would be able to create only one instance of a class.</p>
+                 <p><b>Note </b>We have two different types of constructors. We are going to discuss constructors in detail in the subsequent chapters.</p>
+            </section>
+            <section class="main-section" id="Creating_an_Object">
+                <header>Creating an Object</header>
+                <p>As mentioned previously, a class provides the blueprints for objects. So basically, an object is created from a class. In Java, the new keyword is used to create new objects.</p>
+                <p>There are three steps when creating an object from a class −</p>
+                
+                <ul class="list">
+                    <li><p><b>Declaration</b>− A variable declaration with a variable name with an object type.</p></li>
+                    <li><p><b>Instantiation</b>− The 'new' keyword is used to create the object.</p></li>
+                    <li><p><b>Initialization</b>− The 'new' keyword is used to create the object.</p></li>
+                </ul>
+                <p>Following is an example of creating an object −</p>
+                <h3>Example</h3>
+                <code>public class Puppy {
+                    public Puppy(String name) {
+                       // This constructor has one parameter, name.
+                       System.out.println("Passed Name is :" + name );
+                    }
+                 
+                    public static void main(String []args) {
+                       // Following statement would create an object myPuppy
+                       Puppy myPuppy = new Puppy( "tommy" );
+                    }
+                 }</code>
+               <p>If we compile and run the above program, then it will produce the following result −</p>
+               <h3>Output</h3>
+               <code>Passed Name is :tommy</code>
+            </section>
+            <section class="main-section" id="Tools_You_Will_Need">
+                <header>Tools You Will Need</header>
+                <p>For performing the examples discussed in this tutorial, you will need a Pentium 200-MHz computer with a minimum of 64 MB of RAM (128 MB of RAM recommended).</p>
+                <p>You will also need the following softwares −</p>
+                <ul>
+                    <li>Linux 7.1 or Windows xp/7/8 operating system</li>
+                    <li>Java JDK 8</li>
+                    <li>Microsoft Notepad or any other text editor</li>
+                </ul>
+            </section>
+           
+        </main>
+    </div>
+
+</body>
+<!-- Bootstrap scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Freecode camp checker -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
